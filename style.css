@@ -38,15 +38,7 @@ body{
     justify-content: space-between;
     z-index: 100;
 }
-.toggle-btn{
-    background: var(--bg-color);
-    color: var(--bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    cursor: pointer;
-}
+
 .logo{
     font-size: 2rem;
     color: var(--text-color);
@@ -792,6 +784,186 @@ section{
     }
     .timeline-dot{
         left: 0;
+    }
+}
+@media(max-width: 480px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: var(--second-bg-color);
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a, 
+    .navbar i{
+        display: block;
+        color: var(--text-color);
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar a:hover{
+        color: black;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-circle-1{
+        top: 32rem;
+        width: 45vw;
+        height: 45vw;
+    }
+    .home-circle-2{
+        top: 10rem;
+        width: 55vw;
+        height: 55vw;
+    }
+    .home-img{
+        display: grid;
+        border: none;
+        border-radius: 50%;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-circle-1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+        border: 25px solid var(--main-color);
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-circle{
+        height: 50vw;
+        width: 50vw;
+        margin-top: 30rem;
+        margin-left:10rem;
+    }
+    
+    .about-img{
+        border: none;
+    }
+    .about img{
+        width: 70vw;
+        margin-bottom: 3rem;
+        border: 25px solid var(--main-color);
+    }
+    .service-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .service-container .services-box{
+        flex: 1 1 40rem;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        padding: 3rem 2rem 4rem;
+        height: 600px;
+        border-radius: 2rem;
+        border: 0.2rem solid rgb(224, 224, 224);
+        cursor: pointer;
+        transition: 0.4s ease;
+        color: var(--text-color);
+    }
+    .service-container .services-box:hover{
+        border-color: var(--main-color);
+        transform: scale(1.02);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    .services-box i{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .services-box h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .services-box p{
+        font-size: 1.1rem;
+        margin: 1rem 0 3rem;
+        text-align: left;
+    }
+    
+    .project-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .project-container .projects-box{
+        flex: 1 1 40rem;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        padding: 3rem 2rem 4rem;
+        height: 500px;
+        border-radius: 2rem;
+        border: 0.2rem solid rgb(224, 224, 224);
+        cursor: pointer;
+        transition: 0.4s ease;
+        color: var(--text-color)
+    }
+    .project-container .projects-box:hover{
+        border-color: var(--main-color);
+        transform: scale(1.02);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    .projects-box .project-date{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 800;
+        color: var(--main-color);
+    }
+    .projects-box h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .projects-box p{
+        font-size: 1.3rem;
+        margin: 3rem 0 3rem;
+        text-align: left;
+    }
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+    .projects h2,
+    .skills h2,
+    .timeline-section .heading{
+        font-size: 3.5rem;
     }
 }
 
