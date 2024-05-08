@@ -58,4 +58,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-  });
+});
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tuan310801anh@gmail.com",
+    Password : "EDC3AC105A7E1B246BB9861766CD9164CF66",
+    To : 'ntanh3108@gmail.com',
+    From : "tuan310801anh@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}

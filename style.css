@@ -367,7 +367,7 @@ section{
 }
 .service-container{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
@@ -408,8 +408,7 @@ section{
 .services-box .content.show{
     display: block;
     font-size: 1.3rem;
-    margin: 1rem 0 3rem;
-    text-align: justify;
+    margin: 1rem 0 3rem 1rem;
 }
 .services-box .read-more-btn{
     display: inline-block;

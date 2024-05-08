@@ -201,12 +201,12 @@
           </p>
         </div>
       </div>
-    </section>
+    </section>å
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
+      <form onsubmit="sendEmail(); reset(); return false;">
         <div class="input-box">
           <input type="text" placeholder="Full Name" name="" id="" />
           <input type="email" placeholder="Email" name="" id="" />
@@ -258,5 +258,6 @@
     </footer>
   </body>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="/script.js"></script>
 </html>
